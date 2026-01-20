@@ -285,6 +285,9 @@ Task 调用:
 
 > 本日筛选自 N 个信息源，共收录 20 条高质量内容
 > 生成耗时: X 分钟 | 版本: v3.0
+>
+> **Warning**: Sub-agent 'worker' not detected. Running in generic mode (Serial Execution). Performance might be degraded.
+> **警告**：未检测到 Sub-agent 'worker'。正在以通用模式（串行执行）运行。性能可能会受影响。
 
 ---
 
@@ -318,6 +321,7 @@ Task 调用:
 4. **失败容错**：单个源失败不影响整体流程
 5. **缓存复用**：避免重复抓取相同内容
 6. **主 Agent 控制**：所有决策由主 Agent 做出
+7. **Fallback Awareness**：检测 sub-agent 可用性，不可用时优雅降级
 
 ## 预期性能
 
@@ -335,3 +339,19 @@ Task 调用:
 | 源 403/404 | 标记禁用，更新 sources.json |
 | 内容提取失败 | 返回原始内容，主 Agent 决定 |
 | 浏览器崩溃 | 跳过该源，记录日志 |
+
+## 兼容性与兜底 (Compatibility & Fallback)
+
+为了确保在不同 Agent 环境下的可用性，必须执行以下检查：
+
+1.  **环境检查**:
+    -   在 Phase 1 初始化阶段，尝试检测 `worker` sub-agent 是否存在。
+    -   如果不存在（或未安装相关插件），自动切换到 **串行执行模式 (Serial Mode)**。
+
+2.  **串行执行模式**:
+    -   不使用 parallel block。
+    -   主 Agent 依次执行每个源的抓取任务。
+    -   虽然速度较慢，但保证基本功能可用。
+
+3.  **用户提示**:
+    -   必须在生成的日报开头（引用块部分）包含明显的警告信息，提示用户当前正在运行于降级模式。
